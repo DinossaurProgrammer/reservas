@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "string.h"
 
-typedef struct ficha   // ficha de cliente
+typedef struct ficha   // ficha de cliente tu és bue estupido 
 {
 	char nome[45];  // Nome do cliente, char
 	int idade;      // Idade do Cliente
