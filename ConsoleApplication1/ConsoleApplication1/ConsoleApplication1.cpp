@@ -23,15 +23,19 @@ ficha recolha_cliente()
 	ficha c;
 	printf("Nome do Cliente:\n");
 	gets_s(c.nome);
+	fflush(stdin);
 
 	printf("Idade do Cliente:\n");
 	scanf_s("%d", &c.idade);
+	fflush(stdin);
 
 	printf("Identidade do Cliente:\n");
 	scanf_s("%d", &c.id);
+	fflush(stdin);
 
 	printf("Numero de Reservas:\n");
 	scanf_s("%d", c.nr_res);
+	fflush(stdin);
 
 	return c;
 }
@@ -42,6 +46,8 @@ void imprime_ficha(ficha c)
 	printf("Idade do Cliente:\n", c.idade);
 	printf("Identidade do Cliente:\n", c.id);
 	printf("Numero de Reservas do Cliente:\n", c.nr_res);
+
+	
 }
 
 int main()
