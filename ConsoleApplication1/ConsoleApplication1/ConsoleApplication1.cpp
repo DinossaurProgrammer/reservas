@@ -4,15 +4,18 @@
 #include "stdafx.h"
 #include "string.h"
 
-typedef struct ficha
+typedef struct ficha   // ficha de cliente
 {
-	char nome[45];
-	int idade;
-	int id;
-	int nr_res;
+	char nome[45];  // Nome do cliente, char
+	int idade;      // Idade do Cliente
+	int id;         //Identificação do Cliente
+	int nr_res;     //número de reservas do cliente 0 > nr_res <6
 };
 
-
+typedef struct lugares
+{
+	char lugar[11][10];
+};
 
 
 int main()
